@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
-<title>Talkdeal Ytd Demographics</title>
+<title>Talkdeal Ytd Month Filter</title>
 <style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;max-width:1440px;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
 </head>
 <body>
-<iframe sandbox="allow-scripts" referrerpolicy="no-referrer" title="Talkdeal Ytd Demographics" srcdoc="&lt;!doctype html&gt;
+<iframe sandbox="allow-scripts" referrerpolicy="no-referrer" title="Talkdeal Ytd Month Filter" srcdoc="&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
 &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
 &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
 &lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
-&lt;title&gt;Talkdeal Ytd Demographics&lt;/title&gt;
+&lt;title&gt;Talkdeal Ytd Month Filter&lt;/title&gt;
 &lt;style&gt;:root {
   color-scheme: light dark;
   background-color: var(--background) !important;
@@ -757,7 +757,9 @@ html&gt;body{padding:0}&lt;/style&gt;
     #talkdeal-ytd-viz .section-head h2{margin:0}
     #talkdeal-ytd-viz .monthly{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;align-items:end;height:150px}
     #talkdeal-ytd-viz .month-col{height:100%;display:flex;flex-direction:column;justify-content:end;gap:5px;text-align:center}
-    #talkdeal-ytd-viz .month-bar{background:var(--viz-series-2);min-height:3px}
+    #talkdeal-ytd-viz .month-bar{background:var(--viz-series-2);min-height:3px;transition:opacity .2s ease,background .2s ease}
+    #talkdeal-ytd-viz .monthly.is-filtered .month-col:not(.is-selected) .month-bar{opacity:.28}
+    #talkdeal-ytd-viz .month-col.is-selected .month-bar{background:var(--viz-series-1)}
     #talkdeal-ytd-viz .area-list{display:grid;gap:9px}
     #talkdeal-ytd-viz .area-row{display:grid;grid-template-columns:120px minmax(70px,1fr) 95px 48px;gap:10px;align-items:center}
     #talkdeal-ytd-viz .track{height:13px;background:var(--muted);overflow:hidden}
@@ -781,11 +783,11 @@ html&gt;body{padding:0}&lt;/style&gt;
     #talkdeal-ytd-viz .empty{padding:22px 6px;color:var(--muted-foreground)}
     @media(max-width:760px){#talkdeal-ytd-viz .demo-layout{grid-template-columns:1fr}}
     @media(max-width:600px){#talkdeal-ytd-viz .viz-grid{grid-template-columns:1fr}#talkdeal-ytd-viz .area-row{grid-template-columns:105px 1fr 44px}#talkdeal-ytd-viz .num{display:none}#talkdeal-ytd-viz .monthly{height:120px;gap:4px}}
-    @media(prefers-reduced-motion:reduce){#talkdeal-ytd-viz .fill{transition:none}}
+    @media(prefers-reduced-motion:reduce){#talkdeal-ytd-viz .fill,#talkdeal-ytd-viz .month-bar{transition:none}}
   &lt;/style&gt;
 
   &lt;div class=&quot;viz-controls&quot;&gt;
-    &lt;label class=&quot;form-label&quot;&gt;조회 기간&lt;select class=&quot;form-select&quot; id=&quot;period-filter&quot;&gt;&lt;option value=&quot;YTD&quot;&gt;2026년 누적&lt;/option&gt;&lt;/select&gt;&lt;/label&gt;
+    &lt;label class=&quot;form-label&quot;&gt;월 선택&lt;select class=&quot;form-select&quot; id=&quot;period-filter&quot;&gt;&lt;option value=&quot;YTD&quot;&gt;전체 (2026년 누적)&lt;/option&gt;&lt;/select&gt;&lt;/label&gt;
     &lt;label class=&quot;form-label&quot;&gt;상품 검색&lt;input class=&quot;form-control&quot; id=&quot;product-search&quot; placeholder=&quot;상품명 또는 상품ID&quot;&gt;&lt;/label&gt;
     &lt;label class=&quot;form-label&quot;&gt;1위 유입영역&lt;select class=&quot;form-select&quot; id=&quot;area-filter&quot;&gt;&lt;option value=&quot;전체&quot;&gt;전체&lt;/option&gt;&lt;/select&gt;&lt;/label&gt;
   &lt;/div&gt;
@@ -797,7 +799,7 @@ html&gt;body{padding:0}&lt;/style&gt;
   &lt;/div&gt;
 
   &lt;section aria-labelledby=&quot;monthly-title&quot;&gt;
-    &lt;div class=&quot;section-head&quot;&gt;&lt;h2 id=&quot;monthly-title&quot;&gt;월별 4일 거래액&lt;/h2&gt;&lt;span class=&quot;text-small text-muted&quot;&gt;1월~7월 조회 완료분&lt;/span&gt;&lt;/div&gt;
+    &lt;div class=&quot;section-head&quot;&gt;&lt;h2 id=&quot;monthly-title&quot;&gt;월별 4일 거래액&lt;/h2&gt;&lt;span class=&quot;text-small text-muted&quot; id=&quot;monthly-caption&quot;&gt;1월~7월 조회 완료분&lt;/span&gt;&lt;/div&gt;
     &lt;div class=&quot;monthly&quot; id=&quot;monthly-chart&quot; role=&quot;img&quot; aria-label=&quot;2026년 월별 4일 거래액 비교&quot;&gt;&lt;/div&gt;
   &lt;/section&gt;
 
@@ -831,7 +833,10 @@ html&gt;body{padding:0}&lt;/style&gt;
       function visibleProducts(){return products.filter(p=&gt;(period.value===&#x27;YTD&#x27;||p[0].startsWith(period.value))&amp;&amp;(p[1]+&#x27; &#x27;+p[2]).toLowerCase().includes(search.value.trim().toLowerCase())&amp;&amp;(areaFilter.value===&#x27;전체&#x27;||p[5]===areaFilter.value))}
       function renderMonthly(){
         const totals=months.map(m=&gt;[m,monthlyRows.filter(r=&gt;r[0]===m).reduce((s,r)=&gt;s+r[2],0)]), max=Math.max(...totals.map(x=&gt;x[1]));
-        root.querySelector(&#x27;#monthly-chart&#x27;).innerHTML=totals.map(x=&gt;`&lt;div class=&quot;month-col&quot;&gt;&lt;span class=&quot;text-small&quot;&gt;${compact(x[1])}&lt;/span&gt;&lt;div class=&quot;month-bar&quot; style=&quot;height:${x[1]/max*100}%&quot;&gt;&lt;/div&gt;&lt;span class=&quot;text-small text-muted&quot;&gt;${Number(x[0].slice(5))}월&lt;/span&gt;&lt;/div&gt;`).join(&#x27;&#x27;);
+        const chart=root.querySelector(&#x27;#monthly-chart&#x27;), filtered=period.value!==&#x27;YTD&#x27;;
+        chart.classList.toggle(&#x27;is-filtered&#x27;,filtered);
+        chart.innerHTML=totals.map(x=&gt;`&lt;div class=&quot;month-col${period.value===x[0]?&#x27; is-selected&#x27;:&#x27;&#x27;}&quot;&gt;&lt;span class=&quot;text-small&quot;&gt;${compact(x[1])}&lt;/span&gt;&lt;div class=&quot;month-bar&quot; style=&quot;height:${x[1]/max*100}%&quot;&gt;&lt;/div&gt;&lt;span class=&quot;text-small text-muted&quot;&gt;${Number(x[0].slice(5))}월&lt;/span&gt;&lt;/div&gt;`).join(&#x27;&#x27;);
+        root.querySelector(&#x27;#monthly-caption&#x27;).textContent=filtered?Number(period.value.slice(5))+&#x27;월 선택&#x27;:&#x27;1월~7월 조회 완료분&#x27;;
       }
       function render(){
         const rows=periodRows(), total=rows.reduce((s,r)=&gt;s+r[2],0), payments=rows.reduce((s,r)=&gt;s+r[4],0);
@@ -847,7 +852,7 @@ html&gt;body{padding:0}&lt;/style&gt;
         root.querySelector(&#x27;#product-body&#x27;).innerHTML=slice.length?slice.map(p=&gt;`&lt;tr class=&quot;product-row&quot;&gt;&lt;td&gt;${p[0].slice(5).replace(&#x27;-&#x27;,&#x27;.&#x27;)}&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;product&quot;&gt;${esc(p[2])}&lt;/span&gt;&lt;span class=&quot;text-small text-muted&quot;&gt;ID ${esc(p[1])}&lt;/span&gt;&lt;/td&gt;&lt;td&gt;${fmt(p[3])}원&lt;/td&gt;&lt;td&gt;${fmt(p[4])}건&lt;/td&gt;&lt;td&gt;${inflow(p[5],p[6],1)}&lt;/td&gt;&lt;td&gt;${inflow(p[7],p[8],2)}&lt;/td&gt;&lt;td&gt;${inflow(p[9],p[10],3)}&lt;/td&gt;&lt;td&gt;${inflow(p[11],p[12],4)}&lt;/td&gt;&lt;td&gt;${inflow(p[13],p[14],5)}&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;demo-row&quot;&gt;&lt;td colspan=&quot;9&quot;&gt;&lt;div class=&quot;demo-layout&quot;&gt;&lt;div class=&quot;demo-axis&quot;&gt;&lt;strong&gt;연령 순위&lt;/strong&gt;&lt;div class=&quot;demo-flow&quot;&gt;${demoFlow(p[15])}&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;demo-axis&quot;&gt;&lt;strong&gt;성별 순위&lt;/strong&gt;&lt;div class=&quot;demo-flow&quot;&gt;${demoFlow(p[16])}&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;`).join(&#x27;&#x27;):`&lt;tr&gt;&lt;td colspan=&quot;9&quot; class=&quot;empty&quot;&gt;조건에 맞는 상품이 없습니다.&lt;/td&gt;&lt;/tr&gt;`;
         root.querySelector(&#x27;#page-label&#x27;).textContent=`${page} / ${pages}`; root.querySelector(&#x27;#prev-page&#x27;).disabled=page&lt;=1; root.querySelector(&#x27;#next-page&#x27;).disabled=page&gt;=pages;
       }
-      period.addEventListener(&#x27;change&#x27;,()=&gt;{page=1;render()}); search.addEventListener(&#x27;input&#x27;,()=&gt;{page=1;render()}); areaFilter.addEventListener(&#x27;change&#x27;,()=&gt;{page=1;render()});
+      period.addEventListener(&#x27;change&#x27;,()=&gt;{page=1;renderMonthly();render()}); search.addEventListener(&#x27;input&#x27;,()=&gt;{page=1;render()}); areaFilter.addEventListener(&#x27;change&#x27;,()=&gt;{page=1;render()});
       root.querySelector(&#x27;#prev-page&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;{page--;render()}); root.querySelector(&#x27;#next-page&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;{page++;render()});
       renderMonthly(); render();
     })();
