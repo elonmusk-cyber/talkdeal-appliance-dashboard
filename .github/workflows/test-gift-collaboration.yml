@@ -1,0 +1,37 @@
+name: Gift Collaboration 연결 테스트
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-connection:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Gift Collaboration API 연결 확인
+        env:
+          GIFT_COLLAB_API_KEY: ${{ secrets.GIFT_COLLAB_API_KEY }}
+        run: |
+          if [ -z "$GIFT_COLLAB_API_KEY" ]; then
+            echo "GIFT_COLLAB_API_KEY가 등록되지 않았습니다."
+            exit 1
+          fi
+
+          STATUS=$(curl \
+            --silent \
+            --show-error \
+            --output /tmp/gift-health.json \
+            --write-out "%{http_code}" \
+            --header "Authorization: Bearer ${GIFT_COLLAB_API_KEY}" \
+            "https://gift-collaboration-admin.devel.kakao.com/api/ext/health")
+
+          if [ "$STATUS" != "200" ]; then
+            echo "Gift Collaboration 연결 실패: HTTP ${STATUS}"
+            exit 1
+          fi
+
+          echo "Gift Collaboration 연결 성공"
